@@ -46,14 +46,9 @@ public class Taxes {
         } while (yesOrNo.equals("y"));
 
         double[] prices = new double[listOfPrices.size()];
-        for (i = 0; i < listOfPrices.size(); i++) {
-            prices[i] = listOfPrices.get(i);
-        }
-        ;
+        for (i = 0; i < listOfPrices.size(); i++) {prices[i] = listOfPrices.get(i);}
         System.out.println("Цены:");
-        for (i = 0; i < prices.length; i++) {
-            System.out.println(prices[i]);
-        }
+        for (i = 0; i < prices.length; i++) {System.out.println(prices[i]);}
         System.out.println("Нологе:");
         double[] taxes = taxesCount(prices);
         for (i = 0; i < taxes.length; i++) {System.out.println(taxes[i]);}
